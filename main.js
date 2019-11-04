@@ -81,7 +81,7 @@ function makeAnswers(questNum) {
   console.log(STORE[questNum].answers);
   const answerList = STORE[questNum].answers;
 
-  const answerSecond = answerList.map((a,i) => `<input type='radio' class='question-selector' name='selector' value='${STORE[questNum].answers[i]}' id='${STORE[questNum].answers[i]}'>
+  const answerSecond = answerList.map((a,i) => `<input type='radio' class='question-selector' name='selector' value='${STORE[questNum].answers[i]}' id='${STORE[questNum].answers[i]}' required>
    <label for="option${[i]+1}"> ${STORE[questNum].answers[i]}</label> <br>`);
   $('.answer-container').append(answerSecond);
   }
