@@ -53,18 +53,18 @@ function makeQuestion(question) {
     <form id="peytonQuestions" class="question-form">
       
       <fieldset>
-        <div class="question-container title">
+        <section class="question-container title">
           <legend>${STORE[question].question}</legend>
-        </div>
-        <div class="answer-container display">
-        </div>
-        <div class="feedback">
-        </div>
-        <div class="button-container">
-				  <button type="submit" id="submit" > Submit </button>
-          <button type = "button" id="next-question"> Next Question </button>
-          <button type = "button" id="see-results"> See Results </button>
-        </div>
+        </section>
+        <section class="answer-container display">
+        </section>
+        <section class="feedback">
+        </section>
+        <section class="button-container">
+		    <button type="submit" id="submit" > Submit </button>
+            <button type = "button" id="next-question"> Next Question </button>
+            <button type = "button" id="see-results"> See Results </button>
+        </section>
       </fieldset>
     </form>
   </section>`);
@@ -141,7 +141,7 @@ function displayResults() {
          <h2> Test Complete<h2>
          </section>
         <section class="scorefinal display">
-          <p> Your final score was <span id="final-score-display-bad">${score} out of 5</span> which is not so fantastic. Want to try again?</p>
+          <p> Your final score was <span>${score} out of 5</span> which is not so fantastic. Want to try again?</p>
           </section>
         
         <section class="button-container">
@@ -162,7 +162,7 @@ function displayResults() {
          <h2> Test Complete<h2>
          </section>
         <section class="scorefinal display">
-          <p> Your final score was <span id="final-score-display-good">${score} out of 5</span> which is fantastic. You are a true fan of Peyton Manning.</p>
+          <p> Your final score was <span>${score} out of 5</span> which is fantastic. You are a true fan of Peyton Manning.</p>
           <br>
           <p>Want to try again?</p>
           </section>
